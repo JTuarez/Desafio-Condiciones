@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafío - Condiciones</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Desafío – Condiciones</h1>
+    </header>
+
+    <!-- 1) Imagen con borde -->
+    <section>
+      <h2>Click en imagen Alternar borde rojo</h2>
+      <p>Haz click sobre la imagen para agregar o quitar el borde rojo.</p>
+      <img
+        id="img-click"
+        src="https://images.unsplash.com/photo-1760709071560-0f2b1daaf5cb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1974"
+        alt="Laptop gamer AMD"
+        class="imagen"
+        onclick="this.classList.toggle('borde-rojo')"
+      />
+    </section>
+
+    <!-- 2) Pedir hasta 10 stickers -->
+    <section>
+      <h2>2) Pedido de stickers (máximo 10)</h2>
+      <p>Ingresa la cantidad de cada tipo y presiona “Verificar”.</p>
+
+      <div class="contenedor-stickers">
+        <div class="sticker">
+          <img
+            src="https://picsum.photos/seed/sticker1/200/150"
+            alt="Sticker 1"
+          />
+          <input id="qty1" type="number" min="0" value="0" />
+        </div>
+        <div class="sticker">
+          <img
+            src="https://picsum.photos/seed/sticker2/200/150"
+            alt="Sticker 2"
+          />
+          <input id="qty2" type="number" min="0" value="0" />
+        </div>
+        <div class="sticker">
+          <img
+            src="https://picsum.photos/seed/sticker3/200/150"
+            alt="Sticker 3"
+          />
+          <input id="qty3" type="number" min="0" value="0" />
+        </div>
+      </div>
+
+      <button id="btnStickers">Verificar</button>
+      <p id="stickersMsg"></p>
+    </section>
+
+    <!-- 3) Password con 3 selects -->
+    <section>
+      <h2>3) Validación de password (3 selects)</h2>
+      <p>Selecciona los números y presiona “Ingresar”.</p>
+
+      <div class="contenedor-password">
+        <select id="d1">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+        </select>
+        <select id="d2">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+        </select>
+        <select id="d3">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+        </select>
+        <button id="btnIngresar">Ingresar</button>
+      </div>
+
+      <p id="pwdMsg"></p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
